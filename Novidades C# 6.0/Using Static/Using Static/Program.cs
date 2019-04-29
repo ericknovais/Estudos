@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using static Util.Calc;
+using static System.Console;
 
 namespace Using_Static
 {
@@ -10,6 +8,10 @@ namespace Using_Static
     {
         static void Main(string[] args)
         {
+            var r = Somar(3, 5); //Static
+            WriteLine(r);
+            ReadLine();
+            new Util.Calc().Teste(); //Instaciado
         }
     }
 }
