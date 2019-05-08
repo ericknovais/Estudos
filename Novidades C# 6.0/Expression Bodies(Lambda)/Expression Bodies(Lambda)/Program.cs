@@ -28,12 +28,12 @@ namespace Expression_Bodies_Lambda_
             int x = 10;
             int y = 20;
             var soma = Calculadora.Somar(x, y);
-            WriteLine($"Usando a calculadora {Calculadora.Nome}  a soma de {x}, {y} é: {soma} ");
+            WriteLine($"Usando a calculadora {Calculadora.Nome}  a soma de {x}, {y} é: {soma}");
 
             x = 3;
             y = 7;
             var mult = Calculadora.Multiplicacao(x, y);
-            WriteLine($"Usando a calculadora {Calculadora.Nome}  a multiplicação de {x}, {y} é: {mult} ");
+            WriteLine($"Usando a calculadora {Calculadora.Nome}  a multiplicação de {x}, {y} é: {mult}");
             ReadKey();
         }
 
