@@ -1,1 +1,1 @@
-# Novidades-Do-CSharp-6.0
+# Repositorio voltado para estudo voltado tanto para o front-end como para o back-end.  
