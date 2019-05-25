@@ -14,6 +14,7 @@ namespace Propriedades_Automaticas
             funcionario.Codigo = 555;
             funcionario.Nome = "Erick Novais";
             funcionario.Salario = 2200;
+            Console.ReadKey();
         }
     }
 }
