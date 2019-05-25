@@ -16,11 +16,11 @@ namespace Inicializadores_de_Objetos
                 Nome = "Michael",
                 Filmes = new List<Filme>()
                 {
-                        new Filme(){ Nome = "Prison Break" , Ano = 2005},
-                        new Filme(){ Nome = "Programa", Ano= 2013 }
+                    new Filme(){ Nome = "Prison Break" , Ano = 2005},
+                    new Filme(){ Nome = "Programa", Ano= 2013 }
                 }
             };
-            Console.WriteLine($"ID: {ator.Codigo}, Nome: {ator.Nome}");
+            Console.WriteLine($"ID: {ator.Codigo}, Nome:{ator.Nome}");
             Console.WriteLine("Filmes:");
             for (int i = 0; i < ator.Filmes.Count; i++)
             {
