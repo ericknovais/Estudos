@@ -10,18 +10,21 @@ namespace Sobrecarga_Metodos_Override
     {
         static void Main(string[] args)
         {
-            Musica mp3 = new Musica { Nome = "This is Amarica - Gambino" };
-            DocumentoWord doc = new DocumentoWord() { Nome = ".net Magazine - Artigo POO" };
-            Imagem img = new Imagem() { Nome = "Aguia" };
+            Arquivo mp3 = new Musica { Nome = "This is Amarica - Gambino" };
+            Arquivo doc = new DocumentoWord() { Nome = ".net Magazine - Artigo POO" };
+            Arquivo img = new Imagem() { Nome = "Aguia" };
+            Arquivo texto = new Txt() { Nome = "Lista de Compras" };
             Windows windows = new Windows();
 
             windows.Add(mp3);
             windows.Add(doc);
             windows.Add(img);
+            windows.Add(texto);
+            windows.AbrirTodos();
 
-            windows.Abrir(mp3);
-            windows.Abrir(doc);
-            windows.Abrir(img);
+            //windows.Abrir(mp3);
+            //windows.Abrir(doc);
+            //windows.Abrir(img);
 
             Console.ReadLine();
         }

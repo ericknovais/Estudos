@@ -7,58 +7,83 @@ using System.Threading.Tasks;
 
 namespace Sobrecarga_Metodos_Override
 {
-    public class Musica
+    public abstract class Arquivo
     {
         public string Nome;
         public int Tamanho;
-        public void Abrir()
+        public virtual void Abrir()
         {
-            Console.WriteLine($"Tocando música {Nome}");
+            Console.WriteLine($"Abrindo arquivo: {Nome}");
         }
     }
 
-    public class DocumentoWord
+    public class Musica : Arquivo
     {
-        public string Nome;
-        public int Tamanho;
-        public void Abrir()
+        public override void Abrir()
         {
-            Console.WriteLine($"Mostrando documento do Word: {Nome}");
+            base.Abrir();
+            Console.WriteLine($"Tocando a música: {Nome}");
         }
     }
 
-    public class Imagem
+    public class DocumentoWord : Arquivo
     {
-        public string Nome;
-        public int Tamanho;
-        public void Abrir()
+        public override void Abrir()
+        {
+            Console.WriteLine($"Exibindo arquivo Word: {Nome}");
+        }
+    }
+
+    public class Imagem : Arquivo
+    {
+
+        public override void Abrir()
         {
             Console.WriteLine($"Exibindo imagem: {Nome}");
         }
     }
 
+    public class Txt : Arquivo
+    {
+        public override void Abrir()
+        {
+            Console.WriteLine($"Exibindo arquivo texto: {Nome}");
+        }
+    }
+
     public class Windows
     {
-        public ArrayList _arquivos;
+        public List<Arquivo> _arquivos;
 
         public Windows()
         {
-            this._arquivos = new ArrayList();
+            this._arquivos = new List<Arquivo>();
         }
 
-        public void Add(Object arquivo)
+        public void Add(Arquivo arquivo)
         {
             this._arquivos.Add(arquivo);
         }
 
-        public void Abrir(Object arquivo)
+        public void Abrir(Arquivo arquivo)
         {
-            if (arquivo is Musica)
-                (arquivo as Musica).Abrir();
-            if (arquivo is DocumentoWord)
-                (arquivo as DocumentoWord).Abrir();
-            if (arquivo is Imagem)
-                (arquivo as Imagem).Abrir();
+            //Delegação
+            //if (arquivo is Musica)
+            //    (arquivo as Musica).Abrir();
+            //if (arquivo is DocumentoWord)
+            //    (arquivo as DocumentoWord).Abrir();
+            //if (arquivo is Imagem)
+            //    (arquivo as Imagem).Abrir();
+            //if (arquivo is Txt)
+            //    (arquivo as Txt).Abrir();
+
+            arquivo.Abrir();
+        }
+
+        public void AbrirTodos()
+        {
+            foreach (Arquivo arquivo in _arquivos)
+                Abrir(arquivo);
         }
     }
 }
