@@ -69,6 +69,7 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="labs\labs_aula3.html" />
+    <Content Include="labs\labs_aula4.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
