@@ -68,8 +68,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="images\aqua.jpg" />
+    <Content Include="images\cap5_01.jpg" />
+    <Content Include="images\ferrari.jpg" />
+    <Content Include="images\left.png" />
+    <Content Include="images\middle.png" />
+    <Content Include="images\right.png" />
     <Content Include="labs\labs_aula3.html" />
     <Content Include="labs\labs_aula4.html" />
+    <Content Include="labs\labs_aula5.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -79,6 +86,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="images\Thumbs.db" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
