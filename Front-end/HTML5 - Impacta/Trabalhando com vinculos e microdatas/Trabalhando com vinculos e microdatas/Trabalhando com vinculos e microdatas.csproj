@@ -112,6 +112,7 @@
     <Content Include="exemplo-ancora\parallax\video\parallelparking.ogv" />
     <Content Include="exemplo-ancora\parallax\video\parallelparking.theora.ogv" />
     <Content Include="exemplo-ancora\parallax\video\Thumbs.db" />
+    <Content Include="docs\logo-ensino-online-impacta.zip" />
     <None Include="packages.config" />
     <Content Include="video\video.ogv" />
     <None Include="Web.Debug.config">
