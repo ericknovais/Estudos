@@ -18,7 +18,7 @@
     </style>
 </head>
 <body>
-    <header style="color:red">IMPACTA TECNOLOGIA</header>
+    <header style="color:green">IMPACTA TECNOLOGIA</header>
     <nav><!--ÀREA DE NAVEGAÇÃO--></nav>
     <section>
         <article>
@@ -68,7 +68,7 @@
                 <div itemscope itemtype="http://schema.org/Person">
                     <span itemprop="name">Erick Novais</span>
                     <span itemprop="jobTitle">Programador junior em C#</span>
-                    <span itemprop="streetAddress">Avenida Edgar Facco, N° 41</span>
+                    <span class="cor" itemprop="streetAddress">Avenida Edgar Facco, N° 41</span>
                     <span itemprop="url">https://www.input.com.vc/</span>
                 </div>
             </p>
@@ -81,73 +81,77 @@
         </article>
     </section>
     <section>
-        <header>Listas</header>
-        <p>
-            Listas ordenadas
-            <!--O type da ol é case sensitive-->
-            <!--O inicio da lista ordenada vai começar no 10, por causa do atributo 10-->
-            <ol type="a">
-                <li>Ortopedista</li>
-                <li>Dentista</li>
-                <li>Clínico geral</li>
-            </ol>
-        </p>
-        <p>
-            Listas não ordenadas
-            <!--ul com tem os type="circle/square/disc"-->
-            <ul type="circle">
-                <li>Festa</li>
-                <li>Evento Corporativo</li>
-                <li>Feriado</li>
-            </ul>
-        </p>
-        <hr />
-        <p>
-            Listas de definição
-            <dl>
-                <dt>Capítulo 1</dt>
-                <dd>Primeiro Item</dd>
-                <dd>Segundo Item</dd>
+        <article id="listas">
+            <header class="cor">Listas</header>
+            <p>
+                Listas ordenadas
+                <!--O type da ol é case sensitive-->
+                <!--O inicio da lista ordenada vai começar no 10, por causa do atributo 10-->
+                <ol type="a">
+                    <li>Ortopedista</li>
+                    <li>Dentista</li>
+                    <li>Clínico geral</li>
+                </ol>
+            </p>
+            <p>
+                Listas não ordenadas
+                <!--ul com tem os type="circle/square/disc"-->
+                <ul type="circle">
+                    <li>Festa</li>
+                    <li>Evento Corporativo</li>
+                    <li>Feriado</li>
+                </ul>
+            </p>
+            <hr />
+            <p>
+                Listas de definição
+                <dl>
+                    <dt>Capítulo 1</dt>
+                    <dd>Primeiro Item</dd>
+                    <dd>Segundo Item</dd>
 
-                <dt>Capítulo 2</dt>
-                <dd>Primeiro Item</dd>
-                <dd>Segundo Item</dd>
-            </dl>
-        </p>
+                    <dt>Capítulo 2</dt>
+                    <dd>Primeiro Item</dd>
+                    <dd>Segundo Item</dd>
+                </dl>
+            </p>
+        </article>
     </section>
     <section>
-        <header>
-            Tabelas
-        </header>
-        <p>
-            <table border="1">
-                <thead>
-                <th>IdCliente</th>
-                <th>Nome</th>
-                <th>Produto</th>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Erick Novais</td>
-                        <td>Mouse</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Luan Ferreira</td>
-                        <td>Teclado</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Giovanna Memoli</td>
-                        <td>Iphone x</td>
-                    </tr>
-                    <tr>
-                        <td colspan="3">Registros atualizados</td>
-                    </tr>
-                </tbody>
-            </table>
-        </p>
+        <article>
+            <header>
+                Tabelas
+            </header>
+            <p>
+                <table border="1">
+                    <thead>
+                    <th>IdCliente</th>
+                    <th>Nome</th>
+                    <th>Produto</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Erick Novais</td>
+                            <td>Mouse</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Luan Ferreira</td>
+                            <td>Teclado</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Giovanna Memoli</td>
+                            <td>Iphone x</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">Registros atualizados</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </p>
+        </article>
     </section>
     <aside><!--ÁREA DE PUPLICIDADE--></aside>
     <footer>
