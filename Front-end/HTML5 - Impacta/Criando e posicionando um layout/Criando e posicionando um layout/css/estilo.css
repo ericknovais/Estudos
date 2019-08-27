@@ -1,0 +1,61 @@
+﻿/*Regras defs Css*/
+p {
+    font-style:italic;
+}
+
+h1 {
+    color: #00f;
+    letter-spacing: 1.4em;
+    background-image: url('../imagens/fundo.jpg');
+}
+
+header{
+    color:rgb(15%,40%,30%);
+    font-weight:bold;
+    text-align:center;
+}
+
+span{
+    color:rgba(0,0,255,0.4);
+    font-size:16px;
+    text-transform:uppercase;
+    display:block;
+}
+
+section{
+    background-color:#ccc;
+    padding-left:8px;
+    padding-bottom:8px;
+    margin-bottom:10px;
+    width:80%;
+    border-radius:10px;
+}
+
+article{
+    border:2px dashed #808080;
+    width:90%;
+    margin-bottom:5px;
+    padding-left:8px;
+    padding-bottom:4px;
+}
+
+a:visited{
+    color:orange;
+}
+
+a:link{
+    color:red;
+}
+
+a:hover{
+    color:blue;
+    text-decoration:underline;
+}
+
+.cor{
+    color:#000;
+}
+
+#listas{
+    border:2px dashed orange;
+}

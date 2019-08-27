@@ -1,0 +1,70 @@
+﻿/* Regras em css */
+p {
+    font-style: italic;
+}
+
+h1 {
+    color: #333399;
+    letter-spacing: 1.4em;
+    background-image: url(../imagens/fundo.jpg);
+}
+
+header {
+    color: rgb(15%,40%,30%);
+    font-weight: bold;
+    text-align: center;
+}
+
+span {
+    color: rgba(0,0,255,0.4);
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+section {
+    width: 80%;
+    /* clear:left/both/right */
+    clear: left;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+    section > div {
+        margin-bottom:12px;
+        float:left;
+    }
+
+
+a:visited {
+    color: orange;
+}
+
+a:link {
+    color: red;
+}
+
+a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+article {
+    width: 40%;
+    background: #99ccff;
+    float: left;
+    margin-right: 8px;
+    padding:6px;
+    border-radius:6px;
+}
+
+li {
+    list-style: none;
+    float: left;
+    margin-right: 8px;
+    border: 1px solid #000;
+    padding: 6px;
+}
+
+ul {
+    padding: 0px;
+}
