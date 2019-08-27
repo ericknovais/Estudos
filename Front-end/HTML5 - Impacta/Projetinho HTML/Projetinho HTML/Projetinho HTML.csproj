@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\estilo.css" />
     <Content Include="Global.asax" />
     <Content Include="images\aqua.jpg" />
     <Content Include="images\cap5_01.jpg" />
@@ -74,6 +75,7 @@
     <Content Include="images\left.png" />
     <Content Include="images\middle.png" />
     <Content Include="images\right.png" />
+    <Content Include="labs\home.html" />
     <Content Include="labs\labs_aula07.html" />
     <Content Include="labs\labs_aula03.html" />
     <Content Include="labs\labs_aula04.html" />
