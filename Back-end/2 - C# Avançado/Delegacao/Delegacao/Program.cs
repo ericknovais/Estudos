@@ -11,14 +11,12 @@ namespace Delegacao
         static void Main(string[] args)
         {
             var pedido = new Pedido();
-            pedido.Pagar += Pedido_Pagar;
+            pedido.Pagar += delegate (double valor)
+            {
+                Console.WriteLine($"Pago boleto no valor de {valor}");
+            };
             pedido.Fechar(valor: 2000);
             Console.ReadLine();
-        }
-
-        private static void Pedido_Pagar(double valor)
-        {
-            Console.WriteLine($"Pago boleto no valor de {valor}");
         }
     }
 }

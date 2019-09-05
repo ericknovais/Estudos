@@ -10,7 +10,7 @@ namespace Delegacao
 
     public class Pedido
     {
-        public event PagarEvent Pagar;
+        public event PagarEvent Pagar; //Ponteiro para um método 
 
         public void Fechar(double valor)
         {
